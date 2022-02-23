@@ -1,0 +1,772 @@
+Started GET "/" for ::1 at 2022-02-15 09:34:29 -0800
+  [1m[35m (8.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 54.4ms | Allocations: 736)
+Completed 200 OK in 155ms (Views: 81.1ms | ActiveRecord: 0.0ms | Allocations: 6863)
+
+
+Started GET "/" for ::1 at 2022-02-15 10:48:50 -0800
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.5ms | Allocations: 632)
+Completed 200 OK in 112ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 5625)
+
+
+Started GET "/" for ::1 at 2022-02-15 10:54:57 -0800
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.1ms | Allocations: 632)
+Completed 200 OK in 25ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 5625)
+
+
+Started GET "/" for ::1 at 2022-02-15 10:55:08 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.2ms | Allocations: 371)
+Completed 200 OK in 16ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 1219)
+
+
+Started GET "/" for ::1 at 2022-02-15 10:56:44 -0800
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/danielj/.rvm/gems/ruby-3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.0ms | Allocations: 632)
+Completed 200 OK in 29ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5625)
+
+
+Started GET "/" for ::1 at 2022-02-15 11:01:30 -0800
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 363)
+  Rendered layout layouts/application.html.erb (Duration: 456.0ms | Allocations: 29813)
+Completed 200 OK in 484ms (Views: 474.0ms | ActiveRecord: 0.0ms | Allocations: 34919)
+
+
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBooks (20220215224724)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "books" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "publishing_year" varchar, "num_of_pages" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220215224724"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-02-15 22:58:56.508207"], ["updated_at", "2022-02-15 22:58:56.508207"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (2.0ms)[0m  [1m[32mINSERT INTO "books" ("name", "publishing_year", "num_of_pages", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", nil], ["publishing_year", nil], ["num_of_pages", nil], ["created_at", "2022-02-15 23:07:57.620008"], ["updated_at", "2022-02-15 23:07:57.620008"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (1.4ms)[0m  [1m[32mINSERT INTO "books" ("name", "publishing_year", "num_of_pages", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Harry Potter and the Philosipher's Stone"], ["publishing_year", "1997"], ["num_of_pages", 223], ["created_at", "2022-02-15 23:13:53.425268"], ["updated_at", "2022-02-15 23:13:53.425268"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (1.5ms)[0m  [1m[32mINSERT INTO "books" ("name", "publishing_year", "num_of_pages", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Test"], ["publishing_year", nil], ["num_of_pages", nil], ["created_at", "2022-02-15 23:20:05.416154"], ["updated_at", "2022-02-15 23:20:05.416154"]]
+  [1m[36mTRANSACTION (13.2ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/books" for ::1 at 2022-02-15 16:51:39 -0800
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/books"):
+  
+Started GET "/" for ::1 at 2022-02-16 09:23:26 -0800
+  [1m[35m (15.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 20.1ms | Allocations: 363)
+  Rendered layout layouts/application.html.erb (Duration: 154.3ms | Allocations: 9669)
+Completed 200 OK in 295ms (Views: 251.6ms | ActiveRecord: 0.0ms | Allocations: 14765)
+
+
+Started POST "/books" for ::1 at 2022-02-16 09:23:33 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/books"):
+  
+Started POST "/books" for ::1 at 2022-02-16 09:29:24 -0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/books"):
+  
+Started POST "/books" for ::1 at 2022-02-16 09:46:56 -0800
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/books"):
+  
+Started POST "/books" for ::1 at 2022-02-16 09:48:40 -0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/danielj/Ruby/firstApp/app/controllers/books_controller.rb:2: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+  skip-before_action :verify_authenticity_token
+                     ^
+):
+  
+app/controllers/books_controller.rb:2: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/books_controller.rb:2: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/books_controller.rb:2: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/books" for ::1 at 2022-02-16 09:50:47 -0800
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 18ms (ActiveRecord: 0.0ms | Allocations: 2853)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.2.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.2.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.2.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.2.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.2.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.2.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.2.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.2.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.2.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.2.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/books" for ::1 at 2022-02-16 09:53:37 -0800
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_athenticity_token has not been defined):
+  
+app/controllers/books_controller.rb:2:in `<class:BooksController>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 09:58:40 -0800
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_athenticity_token has not been defined):
+  
+app/controllers/books_controller.rb:2:in `<class:BooksController>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 10:00:28 -0800
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 577)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.2.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.2.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.2.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.2.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.2.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.2.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.2.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.2.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/books" for ::1 at 2022-02-16 10:05:34 -0800
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+RuntimeError (Invalid option key: default_protection_from_forgery=):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 10:07:09 -0800
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+RuntimeError (Invalid option key: default_protection_from_forgery=):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 10:28:14 -0800
+Started POST "/books" for ::1 at 2022-02-16 10:28:14 -0800
+Started POST "/books" for ::1 at 2022-02-16 10:28:14 -0800
+  
+RuntimeError (Invalid option key: default_protection_from_forgery=):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/books_controller.rb:1:in `<main>'
+  
+RuntimeError (Invalid option key: default_protection_from_forgery=):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/books_controller.rb:1:in `<main>'
+  
+RuntimeError (Invalid option key: default_protection_from_forgery=):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 10:28:31 -0800
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+RuntimeError (Invalid option key: default_protection_from_forgery=):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 10:31:48 -0800
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_athenticity_token has not been defined):
+  
+app/controllers/books_controller.rb:2:in `<class:BooksController>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 10:35:40 -0800
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_athenticity_token has not been defined):
+  
+app/controllers/books_controller.rb:2:in `<class:BooksController>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 10:38:32 -0800
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 18ms (ActiveRecord: 0.0ms | Allocations: 2848)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.2.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.2.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.2.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.2.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.2.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.2.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.2.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.2.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.2.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.2.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/books" for ::1 at 2022-02-16 10:40:37 -0800
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_athenticity_token has not been defined):
+  
+app/controllers/books_controller.rb:2:in `<class:BooksController>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 10:46:21 -0800
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_athenticity_token has not been defined):
+  
+app/controllers/books_controller.rb:2:in `<class:BooksController>'
+app/controllers/books_controller.rb:1:in `<main>'
+Started POST "/books" for ::1 at 2022-02-16 10:52:26 -0800
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 577)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.2.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.2.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.2.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.2.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.2.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.2.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.2.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.2.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.2.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.2) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/books" for ::1 at 2022-02-16 10:55:16 -0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+Can't verify CSRF token authenticity.
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 22ms (ActiveRecord: 0.0ms | Allocations: 3149)
+
+
+Started POST "/books" for ::1 at 2022-02-16 11:04:00 -0800
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 35ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 4186)
+
+
+Started GET "/" for ::1 at 2022-02-16 12:00:26 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 359)
+  Rendered layout layouts/application.html.erb (Duration: 73.7ms | Allocations: 9849)
+Completed 200 OK in 95ms (Views: 93.8ms | Allocations: 11769)
+
+
+Started POST "/books" for ::1 at 2022-02-16 13:48:42 -0800
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+Can't verify CSRF token authenticity.
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2684)
+
+
+Started POST "/books" for ::1 at 2022-02-16 13:52:05 -0800
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+Can't verify CSRF token authenticity.
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2693)
+
+
+Started POST "/books" for ::1 at 2022-02-16 13:54:04 -0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>""}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 211)
+
+
+Started POST "/books" for ::1 at 2022-02-16 13:54:20 -0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"Harry Potter"}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started POST "/books" for ::1 at 2022-02-16 13:59:01 -0800
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"Harry Potter"}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:5:in `create'
+  [1m[36mBook Create (4.3ms)[0m  [1m[32mINSERT INTO "books" ("name", "publishing_year", "num_of_pages", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Harry Potter"], ["publishing_year", nil], ["num_of_pages", nil], ["created_at", "2022-02-16 21:59:02.655061"], ["updated_at", "2022-02-16 21:59:02.655061"]]
+  ↳ app/controllers/books_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:5:in `create'
+Completed 200 OK in 127ms (Views: 0.4ms | ActiveRecord: 10.9ms | Allocations: 11489)
+
+
+Started POST "/books" for ::1 at 2022-02-16 14:01:17 -0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"Breakfast of Champions", "puplishing_year"=>"1973", "num_of_pages"=>"303"}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:5:in `create'
+  [1m[36mBook Create (1.2ms)[0m  [1m[32mINSERT INTO "books" ("name", "publishing_year", "num_of_pages", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Breakfast of Champions"], ["publishing_year", nil], ["num_of_pages", nil], ["created_at", "2022-02-16 22:01:17.996958"], ["updated_at", "2022-02-16 22:01:17.996958"]]
+  ↳ app/controllers/books_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:5:in `create'
+Completed 200 OK in 24ms (Views: 2.2ms | ActiveRecord: 10.8ms | Allocations: 1954)
+
+
+Started POST "/books" for ::1 at 2022-02-16 14:05:24 -0800
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"Breakfast of Champions", "puplishing_year"=>"1973", "num_of_pages"=>"303"}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:5:in `create'
+  [1m[36mBook Create (1.3ms)[0m  [1m[32mINSERT INTO "books" ("name", "publishing_year", "num_of_pages", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Breakfast of Champions"], ["publishing_year", nil], ["num_of_pages", 303], ["created_at", "2022-02-16 22:05:25.468862"], ["updated_at", "2022-02-16 22:05:25.468862"]]
+  ↳ app/controllers/books_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:5:in `create'
+Completed 200 OK in 52ms (Views: 1.4ms | ActiveRecord: 10.9ms | Allocations: 11040)
+
+
+Started POST "/books" for ::1 at 2022-02-16 14:06:53 -0800
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"Breakfast of Champions", "publishing_year"=>"1973", "num_of_pages"=>"303"}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:5:in `create'
+  [1m[36mBook Create (1.8ms)[0m  [1m[32mINSERT INTO "books" ("name", "publishing_year", "num_of_pages", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Breakfast of Champions"], ["publishing_year", "1973"], ["num_of_pages", 303], ["created_at", "2022-02-16 22:06:54.168303"], ["updated_at", "2022-02-16 22:06:54.168303"]]
+  ↳ app/controllers/books_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:5:in `create'
+Completed 200 OK in 55ms (Views: 1.1ms | ActiveRecord: 12.4ms | Allocations: 11113)
+
+
+Started GET "/" for ::1 at 2022-02-16 15:06:44 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 36.5ms | Allocations: 361)
+  Rendered layout layouts/application.html.erb (Duration: 239.3ms | Allocations: 9784)
+Completed 200 OK in 394ms (Views: 390.7ms | Allocations: 12516)
+
+
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAuthorIdToBooks (20220216231942)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mALTER TABLE "books" ADD "first_name" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220216231942"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAuthors (20220216234505)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "authors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "birth_year" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220216234505"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAuthorIdToBooks1 (20220217001549)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "books" ADD "author_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220217001549"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Create (1.7ms)[0m  [1m[32mINSERT INTO "authors" ("name", "location", "birth_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "J.K. Rowling"], ["location", nil], ["birth_year", nil], ["created_at", "2022-02-17 00:29:39.342021"], ["updated_at", "2022-02-17 00:29:39.342021"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Create (1.0ms)[0m  [1m[32mINSERT INTO "authors" ("name", "location", "birth_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "J.K. Rowling"], ["location", nil], ["birth_year", nil], ["created_at", "2022-02-17 00:31:40.818971"], ["updated_at", "2022-02-17 00:31:40.818971"]]
+  [1m[36mTRANSACTION (16.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Create (1.8ms)[0m  [1m[32mINSERT INTO "authors" ("name", "location", "birth_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "J.K. Rowling"], ["location", nil], ["birth_year", nil], ["created_at", "2022-02-17 00:37:01.536644"], ["updated_at", "2022-02-17 00:37:01.536644"]]
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (1.8ms)[0m  [1m[32mINSERT INTO "books" ("name", "publishing_year", "num_of_pages", "created_at", "updated_at", "first_name", "author_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Harry Potter"], ["publishing_year", nil], ["num_of_pages", nil], ["created_at", "2022-02-17 00:37:01.602277"], ["updated_at", "2022-02-17 00:37:01.602277"], ["first_name", nil], ["author_id", 3]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2022-02-23 15:37:47 -0800
+  [1m[35m (20.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 363)
+  Rendered layout layouts/application.html.erb (Duration: 198.7ms | Allocations: 9709)
+Completed 200 OK in 371ms (Views: 315.1ms | ActiveRecord: 0.0ms | Allocations: 14831)
+
+
